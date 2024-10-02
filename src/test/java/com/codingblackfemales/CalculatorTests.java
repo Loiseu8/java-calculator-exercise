@@ -51,8 +51,8 @@ public class CalculatorTests {
 
     @Test
     @DisplayName("dividing two numbers")
-    public void testDivide() {
-        final Integer division = Calculator.divide(4, 2);
+    public void testDivision() {
+        final Float division = Calculator.divide(4, 2);
 
         assertEquals(2, division);
     }
@@ -62,7 +62,7 @@ public class CalculatorTests {
     public void testDivision() {
         final Float divide = Calculator.divide(-8, -4);
         assertEquals(2, divide);
-    }
+    } */
 
     @Test
     @DisplayName("divide by zero")
@@ -74,7 +74,7 @@ public class CalculatorTests {
     @Test
     @DisplayName("Divide Two Positive Numbers")
     public void testDivideTwoPositiveNumbers(){
-        final Float sum = Calculator.division(50, 3);
+        final Float sum = Calculator.divide(50, 3);
         assertEquals(16.666666f, sum);
     }
 
@@ -84,5 +84,5 @@ public class CalculatorTests {
         final Float divide = Calculator.divide(2, 4);
         assertEquals(0.5f, divide);
     }
-*/
+
 }
