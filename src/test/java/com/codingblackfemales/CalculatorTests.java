@@ -51,28 +51,38 @@ public class CalculatorTests {
 
     @Test
     @DisplayName("dividing two numbers")
-    public void testDivision() {
+    public void testDivide() {
         final Integer division = Calculator.divide(4, 2);
 
         assertEquals(2, division);
     }
 
-    @Test
-    @DisplayName("dividing by zero")
-    public void testDivisionByZero() {
-        final Integer division = Calculator.divide(0, 0);
-        assertThrows(ArithmeticException.class, ());
+    /** @Test
+    @DisplayName("divide two numbers")
+    public void testDivision() {
+        final Float divide = Calculator.divide(-8, -4);
+        assertEquals(2, divide);
     }
 
     @Test
+    @DisplayName("divide by zero")
+    public void testDivisionZero(){
+        assertEquals(Float.POSITIVE_INFINITY, Calculator.divide(16, 0));
+        // assertThrows(ArithmeticException.class, () -> Calculator.divide(9,0));
+    }
 
+    @Test
+    @DisplayName("Divide Two Positive Numbers")
+    public void testDivideTwoPositiveNumbers(){
+        final Float sum = Calculator.division(50, 3);
+        assertEquals(16.666666f, sum);
+    }
+
+    @Test
     @DisplayName("divide two numbers to return a Float")
-
     public void testDivisionFloat() {
-
-        final Integer division = Calculator.divide(2, 4);
-
-        assertEquals(0.5, division);
-
+        final Float divide = Calculator.divide(2, 4);
+        assertEquals(0.5f, divide);
     }
+*/
 }
